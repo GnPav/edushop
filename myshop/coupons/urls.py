@@ -1,0 +1,9 @@
+from django.urls import re_path
+from . import views
+
+
+urlpatterns = [
+    re_path(r'^apply/$', views.coupon_apply, name='apply'),
+]
+
+app_name = 'coupons'
